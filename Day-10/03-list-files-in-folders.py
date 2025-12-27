@@ -10,7 +10,7 @@ def list_files_in_folder(folder_path):
         return None, "Permission denied"
 
 def main():
-    folder_paths = input("Enter a list of folder paths separated by spaces: ").split()
+    folder_paths = input("Enter a list of folder paths separated by spaces: ").split() # this will convert string input to list 
     
     for folder_path in folder_paths:
         files, error_message = list_files_in_folder(folder_path)
